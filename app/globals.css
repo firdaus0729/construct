@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors - Clean white background */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+    
+    /* Card colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+    
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+    
+    /* Primary - Green from logo (healthcare, growth, wellness) */
+    /* Professional healthcare green - vibrant and matches logo */
+    /* Adjust hue (140-160), saturation (70-85%), lightness (35-45%) to match your exact logo green */
+    --primary: 150 75% 38%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Soft complementary color (light green tint) */
+    --secondary: 150 30% 96%;
+    --secondary-foreground: 220 13% 18%;
+    
+    /* Muted - Subtle backgrounds (green-tinted) */
+    --muted: 150 20% 96%;
+    --muted-foreground: 220 8% 46%;
+    
+    /* Accent - Complementary warm color for highlights */
+    --accent: 340 75% 55%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Destructive - Error states */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    /* Borders and inputs - subtle green tint */
+    --border: 150 15% 90%;
+    --input: 150 15% 90%;
+    --ring: 150 75% 38%;
+    
+    /* Border radius */
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
